@@ -1,7 +1,8 @@
+
 // clase constructora
 class CrearCliente {
     constructor(nombre, fecha, horario, servicio){
-        this.nombre = nombre.toUpperCase();
+        this.nombre = Number(nombre.toUpperCase());
         this.fecha = Number(fecha);
         this.horario = Number(horario);
         this.servicio = Number(servicio);
@@ -27,7 +28,7 @@ class CrearCliente {
     }
     //metodo
     datosIngresados(){
-        return "Su nombre y apellido es: " + this.nombre + "\n" +
+        return "Su nombre es: " + this.nombre + "\n" +
                 "Su turno es el dia: " + this.fecha + "\n" +
                 "En el horario de: " + this.horario + " hs"
     }
@@ -37,7 +38,7 @@ class CrearCliente {
 // funcion que valida que no ingrese vacio o nada
 function validarQueSeaTexto(mensaje){
     let respuesta = prompt(mensaje);
-    while(respuesta == null || respuesta.trim() == ""){
+    while(respuesta == null || respuesta.trim() == "" || !isNaN(Number(respuesta))){
         respuesta = prompt("No puede avanzar sino ingresa letras.\n" + mensaje);
     }
     return respuesta;
@@ -93,7 +94,7 @@ function imprimirDatos(elem){
 }
 
 function filtrarPorFecha(fecha){
-    console.log("\n\nLas reservas del dia "+elem.fecha+" son\n\n")
+    console.log("\n\nLas reservas del dia "+fecha+" son\n\n")
     let filtro = clientesIngresados.filter(elem => elem.fecha == fecha)
     filtro.forEach(elem => imprimirDatos(elem))
 }
@@ -162,41 +163,6 @@ do{
     }
 
 }while(menu != 0)
-
-
-
-
-
-// let consulta = validarQueSeaTexto("Desea agendar un turno? si/no").toLowerCase();
-
-
-
-
-// while(consulta === "si"){
-
-
-//     consulta = validarQueSeaTexto("Desea agendar otro turno? si/no").toLowerCase();
-    
-// }
-// al decconsole.log(filtrarPorServicio(filtrados))ir no sale del ciclo y muestra la lista por consola y un alert para saber que salio del ciclo
-
-//console.log(clientesIngresados);//veo como array los datos cargado por consola
-
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
