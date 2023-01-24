@@ -94,7 +94,7 @@ function imprimirDatos(elem){
 }
 
 function filtrarPorFecha(fecha){
-    console.log("\n\nLas reservas del dia "+fecha+" son\n\n")
+    console.log("\n\nLas reservas del dia "+fecha+" son:\n\n")
     let filtro = clientesIngresados.filter(elem => elem.fecha == fecha)
     filtro.forEach(elem => imprimirDatos(elem))
 }
