@@ -45,6 +45,10 @@
 
      La estructura hace referencia a el html y css, correspondientes al armado de la página general, pero que el JS que se evalúa,
      aún no está interactuando con ella.
+     
+### Ver funcionalidad: 
+
+Link: https://sole-arguello.github.io/pre_entrega_2/ 
 
 ### Nota obtenida:
 ![imagen](img/nota.png)
