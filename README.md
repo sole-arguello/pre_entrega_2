@@ -1,4 +1,6 @@
 # pre_entrega_2: Simulador Interactivo (segunda parte)
+     Deberás entregar la estructura del proyecto, las variables de JS necesarias y los objetos de JS, 
+     correspondientes a la segunda entrega de tu proyecto final.
 
 ### DEMO: https://sole-arguello.github.io/pre_entrega_2/ 
 
