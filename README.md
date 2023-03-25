@@ -47,8 +47,8 @@
 
 ### Para tener en cuenta:
 
-     La estructura hace referencia a el html y css, correspondientes al armado de la página general, pero que el JS que se evalúa,
-     aún no está interactuando con ella.
+     La estructura hace referencia a el html y css, correspondientes al armado de la página general, 
+     pero que el JS que se evalúa, aún no está interactuando con ella.
 
 ### Nota obtenida:
 ![imagen](img/nota.png)
